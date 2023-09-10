@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap');
+
+/* :root{
+    --color-body:#b6cbce ;
+    --color-heading:#eef3db;
+    --color-base:#033f47;
+    --color-base2:#022a30;
+    --color-brand:#e0f780;
+    --color-brand2:#deff58;
+    --sidebar-width:240px;
+    --font-base:"Bai Jamjuree";
+} */
+body {
+   
+    background-color:#110129;
+    color: #b6cbce;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {    
+    color: #eef3db;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #b6cbce;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: #e0f780;
+    
+}
+
+img {
+    width: 100%;
+}
+.text-brand{
+    color: #e0f780;
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:80px ;
+    padding-bottom: 80px;
+    border-bottom:2px solid rgba(255,255,255,0.1) ;
+}
+.text-brand{
+    color:#deff58 ;
+}
+.bg-base{
+background-color:#1c03448d ;
+
+}
+.shadow-effect{
+    transition: all 0.5s;
+}
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 0 #fff;
+}
+/* .link-custom:hover{
+    border: #fff;
+} */
+.iconbox{
+    width: 50px;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    background-color: #fff;
+    color: #110129;
+}
+
+/* navbar */
+.navbar{
+    background-color: #110129ba;
+color: #110129;
+}
+.navbar .nav-link{
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar .nav-link:hover{
+color: #deff58;
+}
+ /* BTN */
+.btn{
+    /* font-size:2rem ; */
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+cursor: pointer;
+padding:12px 28px;    
+}
+.btn-brand{
+background-color:#fff;
+}
+.btn:hover{
+border-color:#fff ;
+color: #fff;
+box-shadow:0 0 0 #fff ;
+animation: box 3s infinite;
+}
+@keyframes box{
+    0%{ box-shadow: #272727;}
+50%{
+box-shadow: 0 0 27px;
+}
+100%{
+box-shadow: #272727;
+}
+}
+ /* contact */
+#Contact .form-control{
+    background-color: #110129;
+    border-color: #fff;
+    color: #eef3db;
+}
+#Contact .form-control:focus{
+    border-color:#fff;
+    box-shadow: none;
+}
+#Contact .form-control::placeholder{
+color: #fff;
+
+}
+#Contact input.form-control{
+height:40px ;
+}
+  /* contact */
+/* footer */
+.cp{
+    padding-left: 160px;
+}
+
+.socialicon a{
+
+width: 40px;
+height: 40px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background-color:#1c03448d ;
+border-radius: 100px;
+font-size: 24px;
+
+}
+@media(min-width: 992px)
+{
+.navbar{
+min-height: 100vh;
+width: 240px;
+background: linear-gradient(rgba(125, 57, 86, 0.8),rgba(62, 3, 71, 0.8)),url(./assest/images/img1.jpg);
+background-size: cover;
+background-position: center;
+}
+.navbar-brand img {
+    border: 8px solid#deff58;
+}
+/* content wrapper */
+
+#content-wrapper{
+padding-left: 240px;
+}
+}                   
